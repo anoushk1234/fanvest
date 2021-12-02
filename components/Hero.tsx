@@ -48,6 +48,9 @@ export default function Hero({
         />
       </Head>
       <Stack
+        minW={{
+          md: "560px",
+        }}
         spacing={4}
         w={{ base: "80%", md: "40%" }}
         align={["center", "center", "flex-start", "flex-start"]}
@@ -68,7 +71,7 @@ export default function Hero({
           fontFamily="Baskerville Old Face"
           fontSize={{ base: "2.5rem", md: "3.5rem" }}
           // bgSize="100% 100%"
-          // bgRepeat="no-repeat"
+          bgRepeat="no-repeat"
           bgImage="https://res.cloudinary.com/dev-connect/image/upload/v1638424677/img/bgherofinal_kevywv.png"
           bgClip="text"
           letterSpacing="3%"
