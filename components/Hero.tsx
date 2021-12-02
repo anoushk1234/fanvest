@@ -157,7 +157,7 @@ Hero.propTypes = {
 Hero.defaultProps = {
   title: "a new era of filmmaking arrives.",
   subtitle:
-    "Fanvest allows indie film makers to launch their film projects as NFTs on Polygon and Solana that fans can buy and fund the film",
+    "Fanvest allows indie film makers to launch their film projects as fractional NFTs on Polygon and Solana that fans can mint and fund the film",
   image: "https://source.unsplash.com/collection/404339/800x600",
   ctaText: "Create your account now",
   ctaLink: "/signup",
