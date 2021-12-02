@@ -10,6 +10,7 @@ const Home: NextPage = () => {
         <title>Fanvest</title>
         <meta name="description" content="Fanvest" />
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
       <Heading
         letterSpacing="3%"
