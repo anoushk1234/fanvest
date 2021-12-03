@@ -75,7 +75,7 @@ export default function Hero({
           bgImage="https://res.cloudinary.com/dev-connect/image/upload/v1638424677/img/bgherofinal_kevywv.png"
           bgClip="text"
           letterSpacing="3%"
-          lineHeight="84%"
+          lineHeight="100%"
           textAlign={["center", "center", "left", "left"]}
         >
           {title}
@@ -96,33 +96,42 @@ export default function Hero({
         >
           {subtitle}
         </Heading>
-
-        <Button
-          theme={extendTheme(ButtonTheme)}
-          borderRadius="0px"
-          variant="gradient"
-          py="1.5rem"
-          px="2rem"
-          maxH="55px"
-          maxW="161px"
-          fromcolor="#A2116D"
-          tocolor="#E0AD1F98"
-          fontFamily="Baskerville Old Face"
-          fontStyle="normal"
-          lineHeight="84%"
-          letterSpacing="3%"
-          fontSize="36"
-          onClick={() => {
-            //open a new page with this link
-            window.open(
-              "https://metafan.notion.site/Fanvest-73c9002b30234c7982bd6f5ff90882bd",
-              "_blank"
-            );
-          }}
-        >
-          <Box as="span">explore</Box>
-        </Button>
-
+        <Link href="explore" passHref>
+          <Button
+            borderRadius="0px"
+            variant="none"
+            py="3rem"
+            px="2rem"
+            maxH="55px"
+            maxW="161px"
+            bgImage="https://res.cloudinary.com/dev-connect/image/upload/v1638520950/img/Rectangle_21_wr7rjn.svg"
+            bgSize="100% 100%"
+            bgRepeat="no-repeat"
+            boxSizing="border-box"
+            fontFamily="Baskerville Old Face"
+            fontStyle="normal"
+            lineHeight="84%"
+            letterSpacing="3%"
+            fontSize="36"
+          >
+            <Box
+              as="span"
+              bgImage="https://res.cloudinary.com/dev-connect/image/upload/v1638381084/img/Group_11_yd6g58.png"
+              bgSize="100% 100%"
+              bgRepeat="no-repeat"
+              boxSizing="border-box"
+              fontFamily="Baskerville Old Face"
+              fontStyle="normal"
+              lineHeight="84%"
+              letterSpacing="3%"
+              fontSize="36"
+              bgClip="text"
+              textAlign="center"
+            >
+              explore
+            </Box>
+          </Button>
+        </Link>
         {/* <Text
           fontSize="xs"
           mt={2}

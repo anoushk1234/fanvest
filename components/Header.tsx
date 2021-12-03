@@ -8,7 +8,8 @@ import { IoCloseOutline } from "react-icons/io5";
 import Head from "next/head";
 
 const MenuItems = (props: any) => {
-  const { children, isLast, to = "/", ...rest } = props;
+  const { children, isLast, to = "/", active, ...rest } = props;
+
   return (
     <>
       <Head>
@@ -20,6 +21,7 @@ const MenuItems = (props: any) => {
           rel="stylesheet"
         />
       </Head>
+
       <Text
         mb={{ base: isLast ? 0 : 8, sm: 0 }}
         mr={{ base: 0, sm: isLast ? 0 : 8 }}
@@ -42,7 +44,7 @@ const MenuItems = (props: any) => {
 const Header = (props: any) => {
   const [show, setShow] = React.useState(false);
   const toggleMenu = () => setShow(!show);
-
+  const [active, setActive] = React.useState("");
   return (
     <Flex
       as="nav"
@@ -70,16 +72,40 @@ const Header = (props: any) => {
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
         >
-          <MenuItems to="/">about us</MenuItems>
-          <MenuItems to="/how">plans </MenuItems>
+          <MenuItems
+            to="/about"
+            onClick={() => setActive("about")}
+            Active={active}
+          >
+            about
+          </MenuItems>
+          <MenuItems
+            to="/explore"
+            onClick={() => setActive("explore")}
+            Active={active}
+          >
+            explore
+          </MenuItems>
           <Flex align="center">
             <Logo
               w={["100px", "100px", "150px", "150px"]}
               color={["white", "white", "primary.500", "primary.500"]}
             />
           </Flex>
-          <MenuItems to="/features">faq </MenuItems>
-          <MenuItems to="/pricing">team </MenuItems>
+          <MenuItems
+            to="/roadmap"
+            onClick={() => setActive("roadmap")}
+            Active={active}
+          >
+            Roadmap
+          </MenuItems>
+          <MenuItems
+            to="/team"
+            onClick={() => setActive("team")}
+            Active={active}
+          >
+            team
+          </MenuItems>
         </Flex>
       </Box>
     </Flex>
