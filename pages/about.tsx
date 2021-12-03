@@ -45,14 +45,25 @@ const About: NextPage = () => {
         as="h1"
         fontFamily="Poppins"
         color="black"
-        size="3xl"
+        fontSize={{
+          base: "4xl",
+          md: "6xl",
+        }}
         fontWeight="bold"
         mb={4}
       >
         Creators get freedom {<br />}
         Fans get content
       </Heading>
-      <Heading as="h2" size="xl" fontFamily="Poppins" mb={4}>
+      <Heading
+        as="h2"
+        fontSize={{
+          base: "xl",
+          md: "2xl",
+        }}
+        fontFamily="Poppins"
+        mb={4}
+      >
         {
           <Text
             _hover={{
