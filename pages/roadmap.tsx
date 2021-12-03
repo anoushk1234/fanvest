@@ -21,10 +21,11 @@ const Roadmap: NextPage = () => {
   const its = ["Launch of v1.0", "Launch of alpha", "Fanvest Token"];
   return (
     <Flex
-      flexDir="column"
-      py={10}
-      h="100%"
+      flexDir="row"
+      // py={10}
+      // h="100%"
       // border="1px solid white"
+      justifyContent="center"
       mx={{ base: "2rem", md: "6rem" }}
     >
       <Head>
@@ -42,36 +43,54 @@ const Roadmap: NextPage = () => {
           type="text/css"
         />
       </Head>
-      {its.map((it, i) => {
-        return (
-          <Flex
-            key={i}
-            justifyContent="flex-start"
-            align="center"
-            // border="1px solid white"
-            mb={10}
-            ml={20}
-          >
-            <Image
-              src="https://res.cloudinary.com/dev-connect/image/upload/v1638547035/img/astrisk_grey_xlsyzx.svg"
-              alt="astrisk"
-              width={["10%", "10%", "10%", "10%"]}
-              height={["10%", "10%", "10%", "10%"]}
-            />
+      <Flex flexDir="column" justify="space-evenly" width="10%">
+        {its.map((it, i) => {
+          return (
+            <>
+              <Image
+                key={i}
+                src="https://res.cloudinary.com/dev-connect/image/upload/v1638547035/img/astrisk_grey_xlsyzx.svg"
+                alt="astrisk"
+                mb="3rem"
+                // width={["10%", "10%", "10%", "10%"]}
+                // height={["10%", "10%", "10%", "10%"]}
+                _hover={{
+                  filter: "invert(100%)",
+                }}
+              />
+              {/* {i == 0 ? (
+                <Box bgColor="gray.400" height="100%" width="1px"></Box>
+              ) : null} */}
+            </>
+          );
+        })}
+      </Flex>
+      <Flex
+        justify="space-evenly"
+        flexDir="column"
+        // justifyContent="flex-start"
+
+        // border="1px solid white"
+        w="auto"
+
+        // ml={{ base: 10, md: 40 }}
+      >
+        {its.map((it, i) => {
+          return (
             <Heading
               as="h1"
-              fontSize={{ base: "3xl", md: "4rem" }}
-              px={["10%", "10%", "10%", "10%"]}
+              key={i}
+              fontSize={{ base: "2rem", md: "4rem" }}
+              ml="1rem"
               fontWeight="bold"
               fontFamily="Baskerville Old Face"
               noOfLines={1}
-              textAlign="left"
             >
               {it}
             </Heading>
-          </Flex>
-        );
-      })}
+          );
+        })}
+      </Flex>
     </Flex>
   );
 };
