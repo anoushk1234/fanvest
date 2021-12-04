@@ -16,6 +16,7 @@ const Home: NextPage = () => {
 <meta property="og:image" content="https://res.cloudinary.com/dev-connect/image/upload/v1638594969/img/ogtitle_y055c2.png" />
 <meta property="og:url" content="https://fanvest.in" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image:alt" content="Fanvest written in gradient with black bg" />
 <meta name="twitter:site" content="@fanvest" />
 <meta name="twitter:title" content="Fanvest" />
 <meta name="twitter:description" content="Fund your film with crypto" />
