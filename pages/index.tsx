@@ -13,13 +13,13 @@ const Home: NextPage = () => {
         <script async src="https://cdn.splitbee.io/sb.js"></script>
         <meta property="og:title" content="Fanvest - Fund your film with crypto" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="https://res.cloudinary.com/dev-connect/image/upload/v1638594969/img/ogtitle_y055c2.svg" />
+<meta property="og:image" content="https://res.cloudinary.com/dev-connect/image/upload/v1638594969/img/ogtitle_y055c2.png" />
 <meta property="og:url" content="https://fanvest.in" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@fanvest" />
 <meta name="twitter:title" content="Fanvest" />
 <meta name="twitter:description" content="Fund your film with crypto" />
-<meta name="twitter:image" content="https://res.cloudinary.com/dev-connect/image/upload/v1638594969/img/ogtitle_y055c2.svg" />
+<meta name="twitter:image" content="https://res.cloudinary.com/dev-connect/image/upload/v1638594969/img/ogtitle_y055c2.png" />
       </Head>
       <Heading
         letterSpacing="3%"
