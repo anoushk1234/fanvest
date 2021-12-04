@@ -55,7 +55,7 @@ export default function Team({ ...rest }: any) {
         {
           name: "Eshaan Gosalia",
           image:
-            "https://res.cloudinary.com/dev-connect/image/upload/v1638552004/img/https_3A_2F_2Fs3-us-west-2.amazonaws.com_2Fsecure.notion-static.com_2Fc03ef087-204b-42b4-920f-b0110939662a_2F898CD683-3C3E-408A-8E41-7857B6371CE8.jpeg_gzqyij.jpg",
+            "https://res.cloudinary.com/dev-connect/image/upload/v1638594480/img/961dbf71-1f34-4f64-88ec-3b2f47e72287_heqmbg.jpg",
           designation: "Co-founder & COO",
           twitter: "https://twitter.com/GosaliaEshaan",
           email: "eshaangosa@gmail.com",
