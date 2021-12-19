@@ -47,7 +47,7 @@ const Explore: NextPage = () => {
         />
       </Head>
       <ChakraLink
-        href="https://www.notion.so/metafan/Metafan-73c9002b30234c7982bd6f5ff90882bd"
+        href="https://drive.google.com/file/d/1tD-2CSdP-ysAb7mU7PkPIyNtWr2NPzNR/view?usp=sharing"
         mb={5}
         _hover={{
           filter: "invert(100%)",
