@@ -126,12 +126,12 @@ export default function Team({ ...rest }: any) {
                 icon={<FaTwitter />}
                 onClick={() => window.open(item.twitter)}
               />
+              <a href={`https://opene.ml/s?email=${item.email}`}>
               <IconButton
                 variant="no-outline"
                 aria-label="Gmail"
-                onClick={() => window.open(item.email)}
                 icon={<SiGmail />}
-              />
+              /></a>
             </HStack>
             {/* <Text
             fontSize="xs"
