@@ -47,7 +47,7 @@ const Explore: NextPage = () => {
         />
       </Head>
       <ChakraLink
-        href="https://drive.google.com/file/d/1tD-2CSdP-ysAb7mU7PkPIyNtWr2NPzNR/view?usp=sharing"
+        href="https://drive.google.com/file/d/1YQgWdSxfTxNloYKHD0UG5bG62PyQ-4xs/view?usp=sharing"
         mb={5}
         _hover={{
           filter: "invert(100%)",
